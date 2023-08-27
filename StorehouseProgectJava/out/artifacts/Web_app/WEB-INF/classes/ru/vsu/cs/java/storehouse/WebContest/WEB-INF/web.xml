@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                      http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <servlet>
+        <servlet-name>WelcomeServlet</servlet-name>
+        <servlet-class>ru.vsu.cs.java.storehouse.webUiServlets.WelcomeServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ProductsServlet</servlet-name>
+        <servlet-class>ru.vsu.cs.java.storehouse.webUiServlets.ProductsServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ProductsInfoServlet</servlet-name>
+        <servlet-class>ru.vsu.cs.java.storehouse.webUiServlets.ProductsInfoServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ShippersServlet</servlet-name>
+        <servlet-class>ru.vsu.cs.java.storehouse.webUiServlets.ShippersServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ShippersInfoServlet</servlet-name>
+        <servlet-class>ru.vsu.cs.java.storehouse.webUiServlets.ShippersInfoServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>WarehousesServlet</servlet-name>
+        <servlet-class>ru.vsu.cs.java.storehouse.webUiServlets.WarehousesServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>WarehousesInfoServlet</servlet-name>
+        <servlet-class>ru.vsu.cs.java.storehouse.webUiServlets.WarehousesInfoServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>WelcomeServlet</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ProductsServlet</servlet-name>
+        <url-pattern>/products</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ProductsInfoServlet</servlet-name>
+        <url-pattern>/products/info</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ShippersServlet</servlet-name>
+        <url-pattern>/shippers</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ShippersInfoServlet</servlet-name>
+        <url-pattern>/shippers/info</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>WarehousesServlet</servlet-name>
+        <url-pattern>/warehouses</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>WarehousesInfoServlet</servlet-name>
+        <url-pattern>/warehouses/info</url-pattern>
+    </servlet-mapping>
+
+</web-app>

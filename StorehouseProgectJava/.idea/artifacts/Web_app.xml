@@ -1,0 +1,20 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Web_app">
+    <output-path>$PROJECT_DIR$/out/artifacts/Web_app</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="StorehouseProgectJava" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="postgresql-42.5.1" />
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.22/lombok-1.18.22.jar" />
+        </element>
+        <element id="dir-copy" path="$PROJECT_DIR$/src/ru/vsu/cs/java/storehouse/webContest/WEB-INF" />
+        <element id="file-copy" path="$PROJECT_DIR$/src/ru/vsu/cs/java/storehouse/webContest/WEB-INF/web.xml" />
+      </element>
+      <element id="dir-copy" path="$PROJECT_DIR$/src/ru/vsu/cs/java/storehouse/webContest/www" />
+      <element id="javaee-facet-resources" facet="StorehouseProgectJava/web/Web" />
+    </root>
+  </artifact>
+</component>
